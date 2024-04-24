@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile View</title>
+    <style>
+            .parent
+        {
+            display: flex;
+            flex-direction: row;
+        }
+            .left
+        {
+            width: 49%;
+            height: 600px;
+            background-color: black;
+            color: white; 
+        }
+        .left #logo
+        {
+            display: flex;
+            justify-content: center;
+            font-size: 40px;
+        }
+        .details 
+        {  
+            text-align: center;
+           font-size: 20px;
+           display: flex;
+           flex-direction: column;
+          line-height: 70px;
+          margin-top: 50px; 
+        }
+        .right
+        {
+            width: 49%;
+            height: 600px;
+            background-color: skyblue;
+            color: white;  
+        }
+        .right p 
+        {
+           display: flex;
+           justify-content: center;
+           font-size: 30px;  
+        }
+        .right img 
+        {
+            width: 200px;
+            height: 200px;
+            margin-left: 30%;   
+        }
+        #para
+        {
+            display: flex;
+            flex-direction: column;
+            align-content: space-between;
+            margin-top: 50px;   
+        }
+        #para p 
+        {
+            font-size: 18px;
+        }
+        .parent2
+        {
+            display: flex;
+            flex-direction: row;
+        }
+        .mywork
+        {
+            width: 49%;
+            background-color: gray;
+            color: black;
+            height: 600px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;   
+        }
+        .mywork p 
+        {
+            font-size: 25px;
+        }
+        .picsinmywork
+        {
+            width: 57%;
+            height: 300px;
+            background-image: url(.././Grid/p1.jpg), url(.././Grid/p2.jpg), url(.././Grid/p6.jpg), url(.././Grid/p4.jpg),url(.././Grid/p5.jpg),url(.././Grid/p6.jpg);
+            background-repeat: no-repeat;
+            background-size: 200px 100px,200px 100px,200px 100px,200px 100px,200px 100px,200px 100px;
+            background-position: left top,right top,left center,right center,left bottom,right bottom;
+        }
+        .resume
+        {
+            width: 49%;
+            height: 600px;
+            background-color: blue;
+            color: white;  
+        }
+        .resume p 
+        {
+            font-size: 25px;
+            display: flex;
+            justify-content: center;
+        }
+        table
+        {
+           margin-left: 30px;
+          margin-top: 50px;
+        }
+        tr,th,table
+        {
+            border: 2px soild black ;
+            border-collapse: collapse;
+            padding: 15px;
+        }
+        .tr1,.tr2,.tr3
+        {
+            background-color: white;
+            color: black;
+        }
+        .parent3
+        {
+            display: flex;
+            flex-direction: row;
+        }
+        .swing
+        {
+            width: 49%;
+            background-color: brown;
+            color: white;
+            height: 600px;   
+        }
+        .swing p 
+        {
+            display: flex;
+            justify-content: center;
+            font-size: 25px;
+        }
+        #swingpara
+        {
+            margin-top: 120px;  
+        }
+        h1 
+        {
+            color: white;
+            text-align: center;
+        }
+        .contact
+        {
+            width: 49%;
+            height: 600px;
+            background-color: rgb(235, 235, 37);
+            color: white; 
+        }
+         h2,h3
+        {
+           
+            text-align: center;
+        }
+        .inputform
+        {
+            width: 300px;
+            height: 270px;
+            background-color: white;
+            color: black;
+           margin-left: 200px;  
+        }
+        input 
+        {
+            margin-left: 5px;
+            width: 280px;
+            border: none;
+            border-bottom: 1px solid black;
+        }
+        #submit
+        {
+            width: 80px;
+            background-color: green;
+            color: black;
+            margin-top: 20px;
+            margin-left: 100px;
+         
+        }
+        .parent4
+        {
+            width: 95.3%;
+            background-color: black;
+            color: white;
+            padding: 20px;
+            text-align: center;
+           
+        }
+        a
+        {
+            text-decoration: none;
+            color: white;
+        }
+        @media only screen and (min-width:0px) and (max-width:600px)
+        {
+            .parent
+        {
+            display: flex;
+            flex-direction: column;
+        }
+        a
+        {
+            text-decoration: none;
+            color: white;
+        }
+            .left
+        {
+            width: 100%;
+            height: 600px;
+            background-color: black;
+            color: white;
+        }
+        .left #logo
+        {
+            display: flex;
+            justify-content: center;
+            font-size: 40px;
+
+        }
+        .details 
+        {
+           
+            text-align: center;
+           font-size: 20px;
+           display: flex;
+           flex-direction: column;
+          line-height: 70px;
+          margin-top: 50px; 
+        }
+        .right
+        {
+            
+            width: 100%;
+            height: 600px;
+            background-color: skyblue;
+            color: white;
+           
+        }
+        .right p 
+        {
+            
+           display: flex;
+           justify-content: center;
+           font-size: 30px;
+           
+        }
+        .right img 
+        {
+            width: 200px;
+            height: 200px;
+            margin-left: 30%;
+            
+        }
+        #para
+        {
+           
+            display: flex;
+            flex-direction: column;
+            align-content: space-between;
+            margin-top: 50px;
+            
+        }
+        #para p 
+        {
+            font-size: 18px;
+        }
+        
+        .parent2
+        {
+            display: flex;
+            flex-direction: column;
+        }
+        .mywork
+        {
+            width: 100%;
+            background-color: gray;
+            color: black;
+            height: 600px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+           
+            
+        }
+        .mywork p 
+        {
+            font-size: 25px;
+        }
+        .picsinmywork
+        {
+            width: 68%;
+            height: 300px;
+            background-image: url(.././Grid/p1.jpg), url(.././Grid/p2.jpg), url(.././Grid/p6.jpg), url(.././Grid/p4.jpg),url(.././Grid/p5.jpg),url(.././Grid/p6.jpg);
+            background-repeat: no-repeat;
+            background-size: 200px 100px,200px 100px,200px 100px,200px 100px,200px 100px,200px 100px;
+            background-position: left top,right top,left center,right center,left bottom,right bottom;
+        }
+        
+        .resume
+        {
+            width: 100%;
+            height: 600px;
+            background-color: blue;
+            color: white;
+        }
+        .resume p 
+        {
+            font-size: 25px;
+
+        }
+        table 
+        {
+            margin-right: 25px;
+        }
+        tr,th,table
+        {
+            border: 2px soild black ;
+            border-collapse: collapse;
+            padding: 2px;
+        }
+        .tr1,.tr2,.tr3
+        {
+            background-color: white;
+            color: black;
+        }
+        .parent3
+        {
+            display: flex;
+            flex-direction: column;
+        }
+        .swing
+        {
+            width: 100%;
+            background-color: brown;
+            color: white;
+            height: 600px;
+            
+        }
+        .swing p 
+        {
+            display: flex;
+            justify-content: center;
+            font-size: 15px;
+        }
+        #swingpara
+        {
+            margin-top: 120px;  
+        }
+        h1 
+        {
+            color: white;
+            text-align: center;
+        }
+        .contact
+        {
+            width: 100%;
+            height: 600px;
+            background-color: rgb(235, 235, 37);
+            color: white;
+        }
+        h2,h3
+        {
+           
+            text-align: center;
+        }
+        .inputform
+        {
+            width: 300px;
+            height: 270px;
+            background-color: white;
+            color: black;
+           margin-left: 10px;  
+        }
+        input 
+        {
+            margin-left: 5px;
+            width: 280px;
+            border: none;
+            border-bottom: 1px solid black;
+        }
+        #submit
+        {
+            width: 80px;
+            background-color: green;
+            color: black;
+            margin-top: 20px;
+            margin-left: 100px;
+         
+        }
+        .parent4
+        {
+            width: 93.3%;
+            background-color: black;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            
+        }
+        
+    }
+ 
+        @media only screen and (min-width:601px) and (max-width:1172px)
+        {
+            .parent
+        {
+            display: flex;
+            flex-direction: row;
+        }
+            .left
+        {
+            width: 49%;
+            height: 600px;
+            background-color: black;
+            color: white; 
+        }
+        .left #logo
+        {
+            display: flex;
+            justify-content: center;
+            font-size: 40px;
+        }
+        .details 
+        {  
+            text-align: center;
+           font-size: 20px;
+           display: flex;
+           flex-direction: column;
+          line-height: 70px;
+          margin-top: 50px; 
+        }
+        .right
+        {
+            width: 49%;
+            height: 600px;
+            background-color: skyblue;
+            color: white;  
+        }
+        .right p 
+        {
+           display: flex;
+           justify-content: center;
+           font-size: 30px;  
+        }
+        .right img 
+        {
+            width: 200px;
+            height: 200px;
+            margin-left: 30%;   
+        }
+        #para
+        {
+            display: flex;
+            flex-direction: column;
+            align-content: space-between;
+            margin-top: 50px;   
+        }
+        #para p 
+        {
+            font-size: 18px;
+        }
+        .parent2
+        {
+            display: flex;
+            flex-direction: row;
+        }
+        .mywork
+        {
+            width: 49%;
+            background-color: gray;
+            color: black;
+            height: 600px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;   
+        }
+        .mywork p 
+        {
+            font-size: 25px;
+        }
+        .picsinmywork
+        {
+            width: 70%;
+            height: 300px;
+            background-image: url(.././Grid/p1.jpg), url(.././Grid/p2.jpg), url(.././Grid/p6.jpg), url(.././Grid/p4.jpg),url(.././Grid/p5.jpg),url(.././Grid/p6.jpg);
+            background-repeat: no-repeat;
+            background-size: 200px 100px,200px 100px,200px 100px,200px 100px,200px 100px,200px 100px;
+            background-position: left top,right top,left center,right center,left bottom,right bottom;
+        }
+        .resume
+        {
+            width: 49%;
+            height: 600px;
+            background-color: blue;
+            color: white;  
+        }
+        .resume p 
+        {
+            font-size: 25px;
+        }
+        table
+        {
+          margin-right: 20px;
+        }
+        tr,th,table
+        {
+            border: 2px soild black ;
+            border-collapse: collapse;
+            padding: 10px;
+        }
+        .tr1,.tr2,.tr3
+        {
+            background-color: white;
+            color: black;
+        }
+        .parent3
+        {
+            display: flex;
+            flex-direction: row;
+        }
+        .swing
+        {
+            width: 49%;
+            background-color: brown;
+            color: white;
+            height: 600px;   
+        }
+        .swing p 
+        {
+           
+            font-size: 25px;
+        }
+        #swingpara
+        {
+            margin-top: 120px;  
+        }
+        h1 
+        {
+            color: white;
+            text-align: center;
+        }
+        .contact
+        {
+            width: 49%;
+            height: 600px;
+            background-color: rgb(235, 235, 37);
+            color: white; 
+        }
+         h2,h3
+        {
+           
+            text-align: center;
+        }
+        .inputform
+        {
+            width: 300px;
+            height: 270px;
+            background-color: white;
+            color: black;
+           margin-left: 130px;  
+        }
+        input 
+        {
+            margin-left: 5px;
+            width: 280px;
+            border: none;
+            border-bottom: 1px solid black;
+        }
+        #submit
+        {
+            width: 80px;
+            background-color: green;
+            color: black;
+            margin-top: 20px;
+            margin-left: 100px;
+         
+        }
+        .parent4
+        {
+            width: 94.7%;
+            background-color: black;
+            color: white;
+            padding: 20px;
+            text-align: center;
+           
+        }
+        a
+        {
+            text-decoration: none;
+            color: white;
+        }
+       
+    }
+
+       
+       
+      
+    </style>
+</head>
+<body>
+    
+  <div class="parent">
+        <div class="left">
+            <div id="logo">
+                <p>My Logo</p>
+            </div>
+            <div class="details">
+                <a href="#home">Home</a>
+                <a href="#work">My Work</a>
+                <a href="#resume">Resume</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+
+        <div class="right" id="home">
+            <p>About Me</p>
+            <div>
+                <img src="./avatar3.png" >
+            </div>
+            <div id="para">
+                <p>Lorem ipusm sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+                <p>Lorem ipusm sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+            </div>
+        </div>
+ </div>
+    <div class="parent2">
+            <div class="mywork" id="work">
+                <p >My Work</p>
+                <p>Some of my latest projects.</p>
+                <div class="picsinmywork"> </div>
+                <p>Just call me awesome.</p>
+            </div>
+            <div class="resume" id="resume">
+                <p>Resume</p>
+                <p>A draft from my CV</p>
+                <table>
+                    <tr>
+                        <th>Year</th>
+                        <th>Title</th>
+                        <th>Work</th>
+                    </tr>
+                    <tr class="tr1">
+                        <th>2012-2016</th>
+                        <th>The rest is history..</th>
+                        <th>Lorem ipsum</th>
+
+                    </tr>
+                    <tr>
+                        <th>2009-2012</th>
+                        <th>Started my own company</th>
+                        <th>My Garage</th>
+                    </tr>
+                    <tr class="tr2">
+                        <th>2008-2009</th>
+                        <th>Started working for Lorem</th>
+                        <th>London, UK</th>
+                    </tr>
+                    <tr>
+                        <th>2005-2008</th>
+                        <th>Degree in Bachelor of Design</th>
+                        <th>Harvard, USA</th>
+                    </tr>
+                    <tr class="tr3">
+                        <th>2002-2005</th>
+                        <th>Degree in Bachelor of Business</th>
+                        <th>RMIT University, Melbourne, Australia</th>
+                    </tr>
+                    <tr>
+                        <th>2002-2005</th>
+                        <th>Degree in Bachelor of Business</th>
+                        <th>RMIT University, Melbourne, Australia</th>
+                    </tr>
+                </table>
+            </div>
+    </div>
+    <div class="parent3">
+        <div class="swing">
+           <h1>Swing By</h1>
+            <div id="swingpara">
+            <p>..for a cup of coffee, or whatever.</p>
+            <p> Chicago, US</p>
+            <p> +00 1515151515</p>
+            <p>test@test.com</p> 
+        </div>
+        </div>
+        <div class="contact" id="contact">
+            <h2>Contact</h2>
+            <h3>Get In Touch</h3>
+                <div class="inputform">
+                    <form>
+                        <p>Name</p>
+                         <input type="text" >
+                         <p>Email</p>
+                         <input type="email" >
+                         <p>Message</p>
+                         <input type="text" >
+                         <input type="submit" id="submit">
+                    </form>
+                </div>
+        </div>
+</div>
+<div class="parent4">
+    <h4>Powerd By PSP</h4>
+</div> 
+</body>
+</html>
